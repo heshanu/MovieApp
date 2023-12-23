@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ModuleRoutingModule } from './module-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
-import { MaterailModule } from '../shared/MaterialModule';
+import { CustomizedMaterailModule} from '../shared/CustomizedMaterialModule';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -13,8 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     ModuleRoutingModule,
-    MaterailModule,
-    HttpClientModule,    
+    CustomizedMaterailModule,
+    HttpClientModule
   ]
 })
 export class ModuleModule { }
