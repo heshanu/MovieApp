@@ -27,7 +27,8 @@ export class FetchService {
     "imdbVotes": "890,617",
     "imdbID": "tt0499549",
     "Type": "movie",
-    "Response": "True",
+      "Response": "True",
+    "Price": 100,
     "Images": [
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BNzM2MDk3MTcyMV5BMl5BanBnXkFtZTcwNjg0MTUzNA@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -36,7 +37,8 @@ export class FetchService {
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMDg1Nzk1MV5BMl5BanBnXkFtZTcwMDk0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg"
     ]
   },
-  {
+    {
+     "Price": 100,
     "Title": "I Am Legend",
     "Year": "2007",
     "Rated": "PG-13",
@@ -63,8 +65,10 @@ export class FetchService {
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5MDM1OTU5OV5BMl5BanBnXkFtZTYwMjA0Nzc4._V1_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0MTI2NjMzMzFeQTJeQWpwZ15BbWU2MDMwNDc3OA@@._V1_.jpg"
     ]
-  },
-  {
+    },
+  
+    {
+     "Price": 100,
     "Title": "300",
     "Year": "2006",
     "Rated": "R",
@@ -91,7 +95,8 @@ export class FetchService {
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MjQzOTEwMV5BMl5BanBnXkFtZTcwMzE2NTIyMw@@._V1_SX1777_CR0,0,1777,947_AL_.jpg"
     ]
   },
-  {
+    {
+     "Price": 200,
     "Title": "The Avengers",
     "Year": "2012",
     "Rated": "PG-13",
@@ -120,7 +125,8 @@ export class FetchService {
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3MzQ3NjA5N15BMl5BanBnXkFtZTcwMzY5OTY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
     ]
   },
-  {
+    {
+     "Price": 300,
     "Title": "The Wolf of Wall Street",
     "Year": "2013",
     "Rated": "R",
