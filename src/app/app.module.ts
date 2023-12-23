@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FetchService } from './service/fetch.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterailModule } from './shared/MaterialModule';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,9 @@ import { FetchService } from './service/fetch.service';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterailModule,
   ],
   providers: [
     FetchService,
