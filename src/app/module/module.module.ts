@@ -16,7 +16,6 @@ import { PopupComponent } from './home-page/popup/popup.component';
     CommonModule,
     ModuleRoutingModule,
     CustomizedMaterailModule,
-    HttpClientModule
-  ]
+    HttpClientModule]
 })
 export class ModuleModule { }

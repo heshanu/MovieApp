@@ -11,13 +11,16 @@
             {{movie.Plot}}
         </p>
     </mat-card-content>
+
     <!-- <button mat-button color="warn" (click)="isShow!=isShow">View</button> -->
-    <div class="example-button-row">
-        <app-popup></app-popup>
+    <div class="example-button-row" (click)="isShow!=isShow">
+       <app-popup></app-popup>
     </div>
+
     <mat-card-actions>
         <button mat-button color="warn">Book</button>
     </mat-card-actions>
+
 </mat-card>
 <br />
 </div>
