@@ -9,12 +9,15 @@ import { Movie } from '../../shared/interface/movie';
 })
 export class HomePageComponent {
 
-  constructor(private movie: FetchService) { } 
+  constructor(private movie: FetchService) {
+    this.getMovie();
+  } 
+  
   movieList: Movie[] = [];
   
-  getMovie(): void {
+  public getMovie(): void {
     this.movieList = this.movie.movies;
-    console.log(this.movieList);
-   }
+    console.log(typeof (this.movieList));
+  }
 }
 
