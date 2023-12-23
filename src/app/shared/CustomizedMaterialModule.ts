@@ -41,6 +41,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 
+
 import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
@@ -59,7 +60,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    LayoutModule
+    LayoutModule,
+    MatDialogModule
   ],
   exports: [
     A11yModule,
@@ -104,7 +106,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: []

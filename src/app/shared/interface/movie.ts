@@ -22,7 +22,8 @@ export interface Movie {
     Response: string;
     Images: string[];
     totalSeasons?: string;
-    ComingSoon?:boolean;
+    ComingSoon?: boolean;
+    Price?: number;
     
 }
     
