@@ -9,8 +9,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
   
 export class HomePageComponent {
-  selectedMovie:Movie= this.movie.movies[0];
-  isShowPopup: boolean = false; 
+  selectedMovie: Movie =this.movie.movies[0];
 
   constructor(private movie: FetchService,public dialog: MatDialog) {
     this.getMovie();
@@ -23,9 +22,10 @@ export class HomePageComponent {
     //console.log(typeof (this.movieList));
   }
 
-  public onSelectMovie(movie: Movie): void { 
-    this.selectedMovie = movie;
-    console.log(this.selectedMovie);
+  public onSelectMovie(movieData: Movie): void { 
+    this.selectedMovie = movieData;
+    const movie=this.movieList.find(movie=>movie.Title===this.selectedMovie.Title);
+    console.log(movie);
   }
 
 }

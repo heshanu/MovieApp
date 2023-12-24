@@ -6,11 +6,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CustomizedMaterailModule} from '../shared/CustomizedMaterialModule';
 import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './home-page/popup/popup.component';
+import { TicktingComponent } from './ticket/tickting/tickting.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
-    PopupComponent
+    PopupComponent,
+    TicktingComponent
   ],
   imports: [
     CommonModule,

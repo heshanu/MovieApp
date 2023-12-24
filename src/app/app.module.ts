@@ -21,7 +21,7 @@ import { ModuleModule } from './module/module.module';
     FormsModule,
     BrowserAnimationsModule,
     CustomizedMaterailModule,
-    ModuleModule
+    ModuleModule,
   ],
   providers: [
     FetchService,

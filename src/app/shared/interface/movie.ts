@@ -24,6 +24,7 @@ export interface Movie {
     totalSeasons?: string;
     ComingSoon?: boolean;
     Price?: number;
+    Shows: string[];
     
 }
     
