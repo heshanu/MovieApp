@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './tickting.component.css'
 })
 export class TicktingComponent {
-
+  ticketCount!:number;
+  
+  onSubmit(event: any) {
+    console.log(``, this.ticketCount);
+   return event.target.ticketCount.value;
+}
 }

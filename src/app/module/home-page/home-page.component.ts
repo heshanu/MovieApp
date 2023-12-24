@@ -25,7 +25,7 @@ export class HomePageComponent {
   public onSelectMovie(movieData: Movie): void { 
     this.selectedMovie = movieData;
     const movie=this.movieList.find(movie=>movie.Title===this.selectedMovie.Title);
-    console.log(movie);
+    //console.log(movie);
   }
 
 }

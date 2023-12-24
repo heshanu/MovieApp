@@ -21,12 +21,16 @@
     <mat-card-actions>
         <button mat-button color="warn">Book</button>
     </mat-card-actions>
+    
+    <h2 *ngIf="selectedMovie.Shows">Avaliable Shows</h2>
     <div *ngFor="let sm of selectedMovie?.Shows">
-        <h2 *ngIf="selectedMovie.Shows">Avaliable Shows</h2>
         <button mat-button color="primary">{{sm}}</button>
     </div>
+    <br>
+    <app-tickting></app-tickting>
 </mat-card>
 <br />
+
 
 
 

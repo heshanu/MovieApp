@@ -1,1 +1,17 @@
-<p>tickting works!</p>
+<form (ngSubmit)="onSubmit($event)">
+    <mat-form-field hintLabel="Max 10 characters">
+        <mat-label>Enter Ticket:</mat-label>
+        <input matInput name="ticketCount" [(ngModel)]="ticketCount" value="ticketCount" maxlength="10" placeholder="Ex. Nougat">
+        <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="warn">Add Ticket</button>
+   <br/>
+
+
+
+<mat-card *ngIf="ticketCount">
+    <mat-card-header>
+    <mat-card-title class="ti">{{ticketCount*200}}</mat-card-title>
+    </mat-card-header>
+</mat-card>
+</form>
