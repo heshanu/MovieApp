@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './home-page/popup/popup.component';
 import { TicktingComponent } from './ticket/tickting/tickting.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SeatbookingComponent } from './seatbooking/seatbooking.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     PopupComponent,
-    TicktingComponent
+    TicktingComponent,
+    SeatbookingComponent
   ],
   imports: [
     CommonModule,
