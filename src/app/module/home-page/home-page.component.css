@@ -15,11 +15,10 @@
     border-left: 100px;
     display: inline-block;
     border: 1px solid #ccc;
-    max-height: 400px;
     margin-right: 100px;
     text-align: center;
     width:400px;
-    height:max-content;
+    height:700px;
     overflow: hidden;
     display: center;
 }

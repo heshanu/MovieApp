@@ -7,6 +7,7 @@ import { CustomizedMaterailModule} from '../shared/CustomizedMaterialModule';
 import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './home-page/popup/popup.component';
 import { TicktingComponent } from './ticket/tickting/tickting.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,9 @@ import { TicktingComponent } from './ticket/tickting/tickting.component';
     CommonModule,
     ModuleRoutingModule,
     CustomizedMaterailModule,
-    HttpClientModule]
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+  ]
 })
 export class ModuleModule { }
