@@ -41,6 +41,7 @@ export class SeatbookingComponent {
     const isDataExists = this.bookedSeatNoList.find((seatObj: any) => { return seatObj.rowName === rowName && seatObj.seatNo === seatNo });
     if (isDataExists == undefined) {
       this.bookedSeatNoList.push({ rowName: rowName, seatNo: seatNo });
+      console.log(``,this.bookedSeatNoList);
     } else {
       this.bookedSeatNoList = this.bookedSeatNoList.filter((seatObj: any) => { return seatObj.rowName !== rowName && seatObj.seatNo !== seatNo });
     }
@@ -55,5 +56,7 @@ export class SeatbookingComponent {
     }
     return true;
   }
+
+  
 
 }
