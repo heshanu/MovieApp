@@ -161,11 +161,8 @@
             <img [src]="selectedMovieObj?.Images[0]" style="height:150px;" />    
         </div>
 <br/>
-        <div class="row" *ngFor="let res of selectedMovieObj?.SeatRows">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
+        <div class="row" *ngFor="let rows of selectedMovieObj?.SeatRows">
+            <div class="seat" *ngFor="let seat of getSeatArray(rows.seats)">seat</div>
             <div class="seat occupied"></div>
             <div class="seat occupied"></div>
         </div>

@@ -27,4 +27,12 @@ export class SeatbookingComponent {
       console.log(``, movieData);
     }   
   } 
+
+  public getSeatArray(totalSeats: number) { 
+    let setArray: number[] = [];
+    for (let i = 1; i <= totalSeats; i++) {
+      setArray.push(i);
+    }
+    return setArray;
+  }
 }
