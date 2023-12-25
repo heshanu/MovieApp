@@ -10,10 +10,12 @@
 
         * {
             box-sizing: border-box;
+            border: 200px 200px 200px 200px;
         }
 
+        
         body {
-            background-color: #242333;
+           /* background-color: #242333;*/
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -126,13 +128,17 @@
 
 <body>
     <div class="movie-container">
-        <label>Pick a movie:</label>
-        <select id="movie">
-            <option value="10">Avengers: Endgame ($10)</option>
-            <option value="12">Joker ($12)</option>
-            <option value="8">Toy Story 4 ($8)</option>
-            <option value="9">The Lion King ($9)</option>
-        </select>
+        <h1 style="background-color: red;">{{movieName}}</h1>
+        <mat-form-field>  
+            <mat-label>Pick a movie:</mat-label>
+            <mat-select id="movieName" [(ngModel)]="movieName">
+                @for (movie of movieList; track movie) {
+                <button mat-raised-button color="warn" (click)="onChangeAcccordingFilmName()">
+                    <mat-option [value]="movie.Title" >{{movie.Title}}</mat-option>
+                </button>
+                }
+            </mat-select>
+        </mat-form-field>
     </div>
 
     <ul class="showcase">
@@ -151,7 +157,9 @@
     </ul>
 
     <div class="container">
-        <div class="screen"></div>
+        <div class="screen">
+            <img [src]="selectedMovieObj?.Images[0]" style="height:400px;" />    
+        </div>
 
         <div class="row">
             <div class="seat"></div>
@@ -292,5 +300,4 @@
         updateSelectedCount();
     </script>
 </body>
-
 </html>
