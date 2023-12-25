@@ -28,5 +28,7 @@ export class HomePageComponent {
     //console.log(movie);
   }
 
+  
+
 }
 
