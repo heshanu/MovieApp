@@ -33,12 +33,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
       ],
     "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+      { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -76,12 +76,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
       ],
        "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+      { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
       ]
       ,
     "Images": [
@@ -117,12 +117,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
       ],
        "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+    { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -158,12 +158,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
       ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+  { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -201,12 +201,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
       ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+     { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -243,12 +243,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+    { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -286,12 +286,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+      { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -329,12 +329,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+     { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -372,12 +372,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+      { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -415,12 +415,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+{ row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -458,12 +458,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+     { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -501,12 +501,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+    { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -544,12 +544,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+     { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -585,12 +585,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+{ row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -628,12 +628,12 @@ export class FetchService {
       "10AM-12AM","5.30PM-7.30PM","9PM-11PM"
     ],
       "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+      { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],
@@ -670,12 +670,12 @@ export class FetchService {
       "10AM-12AM"
     ],
     "SeatRows": [
-      { row: "A", seats: 8 },
-      { row: "B", seats: 10 },
-      { row: "C", seats: 8 },
-      { row: "D", seats: 10 },
-      { row: "E", seats: 10},
-      { row: "F", seats: 8 },
+      { row: "A", seats: 8,seat_occupied:1 },
+      { row: "B", seats: 10,seat_occupied:2 },
+      { row: "C", seats: 8,seat_occupied:1  },
+      { row: "D", seats: 10 ,seat_occupied:1 },
+      { row: "E", seats: 10,seat_occupied:1 },
+      { row: "F", seats: 8 ,seat_occupied:2},
 
             
       ],

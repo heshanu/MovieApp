@@ -15,7 +15,7 @@
 
         
         body {
-           /* background-color: #242333;*/
+            background-color: #242333;
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -162,9 +162,9 @@
         </div>
 <br/>
         <div class="row" *ngFor="let rows of selectedMovieObj?.SeatRows">
-            <div class="seat" *ngFor="let seat of getSeatArray(rows.seats)">seat</div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
+            {{rows.row}}
+            <div class="seat" *ngFor="let seat of getSeatArray(rows.seats)">{{seat}}</div>
+            <div class="seat occupied" *ngFor="let seat of getSeatArray(rows.seat_occupied)">{{seat}}</div>
         </div>
       
     </div>
