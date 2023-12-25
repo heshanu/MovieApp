@@ -25,6 +25,6 @@ export interface Movie {
     ComingSoon?: boolean;
     Price?: number;
     Shows: string[];
-    
+    SeatRows:any[]
 }
     
