@@ -44,7 +44,6 @@ export class SeatbookingComponent {
     } else {
       this.bookedSeatNoList = this.bookedSeatNoList.filter((seatObj: any) => { return seatObj.rowName !== rowName && seatObj.seatNo !== seatNo });
     }
-    
   }
 
 
