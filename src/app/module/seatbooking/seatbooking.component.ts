@@ -12,6 +12,7 @@ export class SeatbookingComponent {
   movieList: Movie[] = [];
   movieName!: string;
   movieNameDisplay: string = "Avatar";
+  bookedSeatNoList: any[] = [];
 
   constructor(private fetchService: FetchService) { 
     this.movieList = this.fetchService.movies; 
@@ -35,4 +36,24 @@ export class SeatbookingComponent {
     }
     return setArray;
   }
+
+  public bookSeat(rowName: string, seatNo: number) {
+    const isDataExists = this.bookedSeatNoList.find((seatObj: any) => { return seatObj.rowName === rowName && seatObj.seatNo === seatNo });
+    if (isDataExists == undefined) {
+      this.bookedSeatNoList.push({ rowName: rowName, seatNo: seatNo });
+    } else {
+      this.bookedSeatNoList = this.bookedSeatNoList.filter((seatObj: any) => { return seatObj.rowName !== rowName && seatObj.seatNo !== seatNo });
+    }
+  }
+
+
+  public checkIfSeatBooked(rowName: string, seatNo: number) { 
+    const isDataExists = this.bookedSeatNoList.find((seatObj: any) => { return seatObj.rowName === rowName && seatObj.seatNo === seatNo });
+    console.log(`isDataExits`,isDataExists);
+    if (isDataExists == undefined) {
+      return false;
+    }
+    return true;
+  }
+
 }

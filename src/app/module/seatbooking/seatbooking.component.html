@@ -163,8 +163,14 @@
 <br/>
         <div class="row" *ngFor="let rows of selectedMovieObj?.SeatRows">
             {{rows.row}}
-            <div class="seat" *ngFor="let seat of getSeatArray(rows.seats)">{{seat}}</div>
-            <div class="seat occupied" *ngFor="let seat of getSeatArray(rows.seat_occupied)">{{seat}}</div>
+            <div class="seat" 
+            *ngFor="let seat of getSeatArray(rows.seats)"
+            [ngClass]="checkIfSeatBooked(rows.row,seat)? 'occupied':''" 
+            (click)="bookSeat(rows.row,seat)" 
+           >{{seat}}</div>
+
+            <div class="seat occupied" 
+            *ngFor="let seat of getSeatArray(rows.seat_occupied)">{{seat}}</div>
         </div>
       
     </div>
