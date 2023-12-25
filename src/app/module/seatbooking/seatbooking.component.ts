@@ -1,7 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FetchService } from '../../service/fetch.service';
 import { Movie } from '../../shared/interface/movie';
-import { log } from 'node:console';
 
 @Component({
   selector: 'app-seatbooking',
@@ -9,29 +8,23 @@ import { log } from 'node:console';
   styleUrl: './seatbooking.component.css'
 })
 export class SeatbookingComponent {
+  selectedMovieObj!: Movie;
   movieList: Movie[] = [];
+  movieName!: string;
+  movieNameDisplay: string = "Avatar";
 
-  selectedMovieName: string = "Avatar";
-  
   constructor(private fetchService: FetchService) { 
     this.movieList = this.fetchService.movies; 
   }
-  selectedMovieObj!:Movie;
- 
-  public onChangeAcccordingFilmName(movie:Movie):void {
-    console.log(`this is two way binding`, this.selectedMovieName);
-    alert(this.selectedMovieName);
 
-    // const movieData = this.movieList.find((movie: Movie) => { 
-    //   alert($event.target.value);
-    //   return movie.Title=== $event.target.value;
-    // })  
-    // alert(movieData);
-
-    // if(movieData) {
-    //   this.selectedMovieObj = movieData;
-    //   console.log(``,movieData);
-    // }
-        
+  public onChangeAcccordingFilmName(): void {
+    this.movieNameDisplay = this.movieName;
+    
+    const movieData= this.movieList.find((movie: Movie) => {return movie.Title === this.movieNameDisplay});
+    
+    if (movieData != undefined) { 
+      this.selectedMovieObj = movieData;
+      console.log(``, movieData);
+    }   
   } 
 }

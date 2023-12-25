@@ -10,6 +10,7 @@
 
         * {
             box-sizing: border-box;
+            border: 200px 200px 200px 200px;
         }
 
         
@@ -127,16 +128,17 @@
 
 <body>
     <div class="movie-container">
-        <h1 style="background-color: red;">{{selectedMovieName}}</h1>
+        <h1 style="background-color: red;">{{movieName}}</h1>
         <mat-form-field>  
             <mat-label>Pick a movie:</mat-label>
-            <mat-select id='movie' (change)="onChangeAcccordingFilmName($event)" [(ngModel)]="selectedMovieName">
+            <mat-select id="movieName" [(ngModel)]="movieName">
                 @for (movie of movieList; track movie) {
-                <mat-option [value]="movie.Title">{{movie.Title}}</mat-option>
+                <button mat-raised-button color="warn" (click)="onChangeAcccordingFilmName()">
+                    <mat-option [value]="movie.Title" >{{movie.Title}}</mat-option>
+                </button>
                 }
             </mat-select>
         </mat-form-field>
-        
     </div>
 
     <ul class="showcase">
@@ -156,7 +158,7 @@
 
     <div class="container">
         <div class="screen">
-            <!-- <img src="movieData.Images[0]" alt="movie poster" style="height:400px;" />     -->
+            <img [src]="selectedMovieObj?.Images[0]" style="height:400px;" />    
         </div>
 
         <div class="row">
