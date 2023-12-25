@@ -175,8 +175,8 @@
       
     </div>
 
-    <p class="text">
-        You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    <p class="text" *ngFor="let b of bookedSeatNoList">
+        You have selected <span id="count" >{{b.rowName}}-{{b.seatNo}}</span> seats for a price of $<span  id="total">{{b.seatNo*200}}</span>
     </p>
 
     <script>
